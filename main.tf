@@ -205,7 +205,7 @@ resource "aws_ebs_volume" "example" {
 	}
 }
 
-# 9. Create Application Load balancer.
+# 10. Create Application Load balancer.
 
 resource "aws_lb" "ALB" {
   name               = "Alb-tf"
@@ -233,7 +233,7 @@ resource "aws_lb" "ALB" {
   }
 }
 
-# 10. Create Auto Scaling Group.
+# 11. Create Auto Scaling Group.
 
 resource "aws_launch_configuration" "lconf" {
   image_id      = "${lookup(var.webserver_ami,var.region)}"
